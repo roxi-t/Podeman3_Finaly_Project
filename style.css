@@ -1,0 +1,179 @@
+/* General Settings */
+* {
+  font-family: "Vazirmatn", Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f8fafc, #dbeafe); /* Soft background gradient */
+  color: #1e293b; /* Dark gray text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Entry Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main Card */
+.main-container {
+  width: 90%;
+  max-width: 850px;
+  background: #ffffff; /* Matte white background */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Main Heading */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1e3a8a; /* Dark blue */
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Forms */
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #475569; /* Medium gray */
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db; /* Light gray border */
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1e293b;
+  background: #f8fafc; /* Soft background */
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #1e3a8a; /* Dark blue */
+  box-shadow: 0 0 8px rgba(30, 58, 138, 0.3); /* Focus effect */
+}
+
+input:hover,
+select:hover {
+  border-color: #1e3a8a;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  background: linear-gradient(135deg, #dbeafe, #93c5fd); /* Light blue gradient */
+  color: #1e293b;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(147, 197, 253, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(147, 197, 253, 0.5); /* Stronger shadow */
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(147, 197, 253, 0.3);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  background: #ffffff; /* White background */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: center;
+  color: #1e293b; /* Dark gray text */
+  font-size: 16px;
+  border-bottom: 1px solid #e5e7eb; /* Light gray separator */
+}
+
+table th {
+  background-color: #dbeafe; /* Light blue */
+  color: #1e3a8a; /* Dark blue */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+table tbody tr {
+  transition: background 0.3s ease;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fafc; /* Light gray */
+}
+
+table tbody tr:hover {
+  background-color: #d1fae5; /* Mint green */
+}
+
+/* Participant Information Cards */
+.participant-card {
+  background: #ffffff; /* Matte white */
+  border: 1px solid #e5e7eb; /* Light gray border */
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.participant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Participant Card Title */
+.participant-card h3 {
+  font-size: 20px;
+  color: #1e3a8a; /* Dark blue */
+  margin-bottom: 10px;
+}
+
+/* Buttons in the Report Section */
+.buttons button {
+  margin-top: 15px;
+}
